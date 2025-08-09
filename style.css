@@ -171,7 +171,7 @@ input:-webkit-autofill {
   display: flex;
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/img/lahan_singkong.jpg");
+    url("img/lahan_singkong.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -472,4 +472,96 @@ footer .credit {
 footer .credit a {
   color: #fff;
   font-weight: 700;
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18px;
+    width: 23px;
+  }
+
+  .navigation {
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    background-color: rgba(1, 1, 1, 0.95);
+    width: 100%;
+    padding: 2rem;
+    flex-direction: column;
+    transition: left 0.3s ease;
+  }
+
+  .navigation.active {
+    left: 0;
+  }
+
+  .navigation a {
+    display: block;
+    margin: 1rem 0;
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.6rem;
+  }
+
+  .menu p {
+    font-size: 1.2rem;
+  }
+
+  .contact .row {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+
+  .contact .row .map {
+    height: 30rem;
+  }
+
+  .contact .row form {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
 }
